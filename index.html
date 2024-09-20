@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warren's Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/cf27f05fa8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <div class="logo"></div>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>UI/UX Designer</p>
+        <h1>Hi, I'm <span>Warren Vasquez</span><br>Computer Science Student</h1>
+      </div>
+    </div>
+
+  </div>
+  <!----------about--------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="me.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Hi there! I’m a passionate coder who loves diving into new technologies and solving problems through code. When I'm not busy programming, you can find me listening to the soothing sounds of "Wave to Earth," which inspires my creativity and keeps me centered. I enjoy exploring the intersection of tech and art, always looking for ways to blend my interests into unique projects. Let’s connect and share our love for coding and music!
+
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Basic Coding</span><br>HTML, CSS, JavaScript, and c++</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>UI/UX</span><br>Designing Web/App</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2024</span><br>Currently studying a Computer Science</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-------------services------------->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-titles">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>Ensuring your website looks and performs flawlessly on all devices, from desktops to smartphones, for a
+            seamless user experience.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>UX/UI Design</h2>
+          <p>Designing intuitive navigation and interactive elements that make it easy for visitors to find what they
+            need and take action.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------------porfolio----------->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-titles">My Favorite Apps</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="work-1.png">
+          <div class="layer">
+            <h3>Steam</h3>
+            <p>The app connects you to the talented people around the world. Download it from play store.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="work-2.png">
+          <div class="layer">
+            <h3>Valorant</h3>
+            <p>The app is an FPS game and can let you play with friends. Download it from play store.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="work-3.jpg">
+          <div class="layer">
+            <h3>Roblox</h3>
+            <p>The app connects you to people around the world that also plays it. Download it from play store.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+  <!---------------contact----------->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-titles">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i>vsqz.warren@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>09123456785</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100088478330482"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/sharkureki/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/orekizu"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <a href="" class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright @ 2024 Warren's Website</p>
+    </div>
+  </div>
+
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzWUD13hfoaOjd1LHF3QSrGXVmmFcvruKUgXnn1Ji6IIn5CRmFTYYVzFLspOzfm-A5k/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message sent succesdfully"
+          setTimeout(function () {
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+</html>
